@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      @media (max-width: 480px) {
+        * {
+          box-sizing: border-box;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        table,
+        tr,
+        td {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      body {
+        margin: 0;
+        background-color: #cccccc;
+      }
+
+      table {
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 0;
+      }
+
+      tr {
+        border: 0;
+      }
+
+      .wrapper {
+        width: 100%;
+        background-color: #e8e8e8;
+        table-layout: fixed;
+      }
+
+      .main {
+        width: 100%;
+        max-width: 600px;
+        color: black;
+        margin: 0 auto;
+        font-family: sans-serif;
+        padding-bottom: 10px;
+      }
+
+      .two-columns {
+        font-size: 0;
+        text-align: center;
+      }
+
+      .two-columns .firstColumn {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+
+      .two-columns .secondColumn {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+
+      .two-columns .firstColumn img {
+        mix-blend-mode: color-burn;
+      }
+
+      .button-fill {
+        max-width: 240px;
+        padding: 20px 30px;
+        background-color: #00a4a6;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .two-col {
+        font-size: 0;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 600px) {
+        img {
+          width: 100%;
+        }
+      }
+
+      @media screen and (min-width: 600px) {
+        .header .secondColumn {
+          padding: 0 0 0 74px;
+        }
+      }
+
+      @media screen and (min-width: 580px) {
+        .header .sec {
+          padding: 0 0 0 105px;
+        }
+      }
+
+      .two-col .col {
+        width: 100%;
+        max-width: 250px;
+        display: inline-block;
+        vertical-align: top;
+        background-color: #fff;
+        margin-left: 15px;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .two-col .card {
+        text-align: left;
+      }
+
+      .col .padding {
+        padding: 15px;
+      }
+
+      .two-columns .last {
+        padding: 15px;
+      }
+
+      .two-columns .content {
+        font-size: 14px;
+      }
+
+      .two-columns .firstCol {
+        width: 100%;
+        max-width: 350px;
+        display: inline-block;
+      }
+
+      .firstCol .callout--btn {
+        border: 2px solid black;
+        text-decoration: none;
+        color: #000;
+        padding: 10px 20px;
+        max-width: 160px;
+        font-weight: bold;
+      }
+
+      .two-columns .secondCol {
+        width: 100%;
+        max-width: 150px;
+        display: inline-block;
+        vertical-align: top;
+        padding: 45px 25px 0 0;
+      }
+
+      .contactImg {
+        margin: 0 auto;
+        margin-top: -40px;
+      }
+
+      .contactImg img {
+        border-radius: 50%;
+        height: 40px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <center class="wrapper">
+      <table class="main" width="100%" align="center">
+        <!--LOGO SECTION-->
+        <tr>
+          <td style="padding: 14px 0 4px">
+            <table width="100%">
+              <tr>
+                <td class="two-columns header">
+                  <table class="firstColumn">
+                    <tr>
+                      <td>
+                        <a href="">
+                          <img
+                            src="https://mcusercontent.com/14a17d16c1cc2701e54f82506/images/5001f1f1-21d2-6042-d137-62824472f325.png"
+                            alt="Go Daddy"
+                            width="180"
+                            title="GoDaddy logo"
+                            style="background: #cccccc"
+                          />
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="secondColumn">
+                    <tr>
+                      <td style="padding: 0 0 0 82px">
+                        <p style="font-size: 10px">
+                          24/7 support: +1 (480) 505-8877
+                        </p>
+                        <p style="font-size: 10px">
+                          Customer Number: 275669983
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--TOP HEADER-->
+        <tr>
+          <td>
+            <table width="100%" style="background-color: #fff">
+              <tr>
+                <td style="text-align: left; padding: 25px 25px 40px">
+                  <p style="font-size: 30px; font-weight: bold">
+                    Welcome to GoDaddy
+                  </p>
+                  <p
+                    style="
+                      font-size: 14px;
+                      line-height: 23px;
+                      padding-bottom: 35px;
+                    "
+                  >
+                    Whether you've already got a successful difference or just
+                    an idea, we can help you bring it to life. Get started with
+                    30% off your first purchase
+                  </p>
+                  <p href="#" class="button-fill">
+                    Start Shopping and Save 30% &#8594;
+                  </p>
+                  <p style="padding-top: 20px">
+                    Use promo code
+                    <span style="font-weight: bold; letter-spacing: -1px" ;
+                      >R65006505</span
+                    >
+                    at checkout
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--BANNER IMAGE-->
+        <tr>
+          <td style="font-size: 0">
+            <img
+              src="https://mcusercontent.com/14a17d16c1cc2701e54f82506/images/bf0e7a76-81ed-092d-e19b-9c3a52189f77.jpg"
+              width="600"
+              style="max-width: 100%"
+            />
+          </td>
+        </tr>
+        <!--Title and two Cards-->
+        <tr>
+          <td style="background-color: #004249">
+            <table width="100%">
+              <tr>
+                <td style="color: #fff; text-align: center; padding: 25px">
+                  <p style="font-size: 22px">Where to start</p>
+                  <p style="color: rgba(229, 229, 229, 0.9)">
+                    There's no right or wrong to get online, but most folks
+                    start with either a domain or a website
+                  </p>
+                  <tr>
+                    <td class="two-col" style="padding: 25px">
+                      <table class="col">
+                        <tr>
+                          <td class="padding">
+                            <table class="card">
+                              <tr>
+                                <td>
+                                  <p style="font-weight: bold; font-size: 18px">
+                                    A Domain name
+                                  </p>
+                                  <p
+                                    style="
+                                      font-weight: 500;
+                                      font-size: 14px;
+                                      line-height: 25px;
+                                    "
+                                  >
+                                    If you've got great name or idea, but
+                                    haven't got much further than that, a domain
+                                    is the way to go. it lets you lock down your
+                                    online address before someone else gets it,
+                                    sometimes for as little as $0.099/yr
+                                  </p>
+                                  <p style="font-weight: bold; font-size: 20px">
+                                    Find Your Domain &#8594;
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <table class="col">
+                        <tr>
+                          <td class="padding">
+                            <table class="card">
+                              <tr>
+                                <td>
+                                  <p style="font-weight: bold; font-size: 18px">
+                                    A Website
+                                  </p>
+                                  <p
+                                    style="
+                                      font-weight: 500;
+                                      font-size: 14px;
+                                      line-height: 25px;
+                                    "
+                                  >
+                                    If you're ready to build expand your
+                                    business, you'll want a website. Our
+                                    Websites + Marketing gives you everything
+                                    you need to easily create and promote your
+                                    business online --no technical skills
+                                    required.
+                                  </p>
+                                  <p
+                                    style="
+                                      font-weight: bold;
+                                      font-size: 20px;
+                                      max-width: 150px;
+                                    "
+                                  >
+                                    Create a Free Website &#8594;
+                                  </p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <tr>
+                        <td style="padding: 15px 0 20px">
+                          <tr>
+                            <td
+                              style="
+                                text-align: center;
+                                color: #ccc;
+                                font-size: 14px;
+                              "
+                            >
+                              <p style="font-size: 20px; color: #fff">
+                                Some number's you'll need:
+                              </p>
+                              <p>Customer Number:65006505</p>
+                              <p style="text-decoration: underline">
+                                View your pin
+                              </p>
+                            </td>
+                          </tr>
+                        </td>
+                      </tr>
+                    </td>
+                  </tr>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--Call out Section-->
+        <tr>
+          <td style="background-color: #fff">
+            <table width="100%">
+              <tr>
+                <td class="two-columns last">
+                  <table class="firstCol">
+                    <tr>
+                      <td style="padding: 25px 0">
+                        <table class="content">
+                          <tr>
+                            <td style="text-align: left">
+                              <p style="font-weight: bold; font-size: 16px">
+                                #OpenWeStand with small business
+                              </p>
+                              <p style="line-height: 21px">
+                                During these tough times we have free resources
+                                to hep you keep your business open, even if your
+                                doors are closed.
+                              </p>
+                              <p href="#" class="callout--btn">
+                                Get Free Resources &#8594;
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="secondCol">
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td>
+                              <img
+                                src="https://mcusercontent.com/14a17d16c1cc2701e54f82506/images/0b54e193-90a9-b189-19be-0b4e67465474.png"
+                                alt=""
+                                width="150"
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--ContactUs-->
+      </table>
+      <table class="main" width="100%" style="margin-top: 50px">
+        <tr>
+          <td
+            style="
+              background-color: #f6f5f5;
+              padding: 25px;
+              border-bottom: 4px solid #9c44b6;
+            "
+          >
+            <table width="100%">
+              <tr>
+                <td>
+                  <table class="contactImg">
+                    <tr>
+                      <td>
+                        <table
+                          width="44"
+                          height="44"
+                          cellspacing="0"
+                          style="border-radius: 50%"
+                        >
+                          <tr>
+                            <td>
+                              <img
+                                src="https://mcusercontent.com/14a17d16c1cc2701e54f82506/images/b3adc904-af9b-5fb4-fde9-ff74fd528e2a.jpg"
+                                alt="Woman"
+                                width="40px"
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <p
+                    style="
+                      text-align: center;
+                      font-weight: 700;
+                      font-size: 18px;
+                    "
+                  >
+                    Our GoDaddy Guides are here for you 24/7
+                  </p>
+                  <p style="text-align: center; font-size: 14px">
+                    If you're still not sure where to start, just give us a call
+                    at +1(480) 505-8877.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <!--FooterLike-->
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    padding: 25px;
+                    color: rgba(157, 157, 157, 0.9);
+                    line-height: 25px;
+                  "
+                >
+                  <p>
+                    &#42;<span
+                      style="text-decoration: underline; color: #5da2a5"
+                      >See offer terms, conditions and legal policies.</span
+                    >
+                  </p>
+                  <p>
+                    &#42;&#42;<span
+                      >Plus ICANN fee of $0.18 per domain name per year.</span
+                    >
+                  </p>
+                  <p>
+                    Click here to
+                    <span style="text-decoration: underline; color: #5da2a5"
+                      >Unsubscribe</span
+                    >
+                    or manage your email preferences.
+                  </p>
+                  <p>
+                    Please do not reply to this email. Emails sent to this
+                    address will not be answered.
+                  </p>
+                  <p>
+                    Copyright &#169; 1999-2020 GoDaddy Operating Company, LLC.
+                    14455 N. Hayden Rd, Ste. 219, Scottsdale, AZ 85260 USA. All
+                    rights reserved.
+                  </p>
+                  <p style="text-align: right; margin-top: 50px">3613545776</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
