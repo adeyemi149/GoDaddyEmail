@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <style type="text/css">
       @media (max-width: 480px) {
         * {
           box-sizing: border-box;
-        }
-
-        img {
-          width: 100%;
         }
 
         table,
@@ -21,6 +21,12 @@
           display: block;
           width: 100%;
         }
+      }
+
+      .wrapper {
+        width: 100%;
+        background-color: #e8e8e8;
+        table-layout: fixed;
       }
 
       body {
@@ -40,19 +46,14 @@
         border: 0;
       }
 
-      .wrapper {
-        width: 100%;
-        background-color: #e8e8e8;
-        table-layout: fixed;
-      }
-
       .main {
         width: 100%;
         max-width: 600px;
         color: black;
         margin: 0 auto;
+        border-spacing: 0;
         font-family: sans-serif;
-        padding-bottom: 10px;
+        padding: 10px;
       }
 
       .two-columns {
@@ -60,33 +61,16 @@
         text-align: center;
       }
 
-      .two-columns .firstColumn {
+      .two-columns .column {
         width: 100%;
-        max-width: 300px;
+        max-width: 290px;
         display: inline-block;
         vertical-align: top;
         text-align: center;
       }
 
-      .two-columns .secondColumn {
-        width: 100%;
-        max-width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        text-align: center;
-      }
-
-      .two-columns .firstColumn img {
+      .two-columns .column img {
         mix-blend-mode: color-burn;
-      }
-
-      .button-fill {
-        max-width: 240px;
-        padding: 20px 30px;
-        background-color: #00a4a6;
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
       }
 
       .two-col {
@@ -95,21 +79,20 @@
       }
 
       @media screen and (max-width: 600px) {
-        img {
-          width: 100%;
+        .header .firstColumn {
+          display: inline;
         }
-      }
-
-      @media screen and (min-width: 600px) {
         .header .secondColumn {
-          padding: 0 0 0 74px;
+          display: inline;
         }
       }
 
-      @media screen and (min-width: 580px) {
-        .header .sec {
-          padding: 0 0 0 105px;
-        }
+      .header .col__one {
+        padding: 0 62px 10px;
+      }
+
+      .header .col__two {
+        padding: 0 100px;
       }
 
       .two-col .col {
@@ -118,8 +101,7 @@
         display: inline-block;
         vertical-align: top;
         background-color: #fff;
-        margin-left: 15px;
-        margin-top: 10px;
+        margin: 10px 15px 0 15px;
         text-align: center;
       }
 
@@ -163,12 +145,13 @@
       }
 
       .contactImg {
-        margin: 0 auto;
-        margin-top: -40px;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       .contactImg img {
         border-radius: 50%;
+        width: 40px;
         height: 40px;
         object-fit: cover;
       }
@@ -183,14 +166,14 @@
             <table width="100%">
               <tr>
                 <td class="two-columns header">
-                  <table class="firstColumn">
+                  <table class="column">
                     <tr>
-                      <td>
+                      <td style="padding: 0 60px 10px">
                         <a href="">
                           <img
                             src="https://mcusercontent.com/14a17d16c1cc2701e54f82506/images/5001f1f1-21d2-6042-d137-62824472f325.png"
                             alt="Go Daddy"
-                            width="180"
+                            width="170"
                             title="GoDaddy logo"
                             style="background: #cccccc"
                           />
@@ -198,9 +181,9 @@
                       </td>
                     </tr>
                   </table>
-                  <table class="secondColumn">
+                  <table class="column">
                     <tr>
-                      <td style="padding: 0 0 0 82px">
+                      <td style="padding: 0 70px">
                         <p style="font-size: 10px">
                           24/7 support: +1 (480) 505-8877
                         </p>
@@ -221,7 +204,13 @@
             <table width="100%" style="background-color: #fff">
               <tr>
                 <td style="text-align: left; padding: 25px 25px 40px">
-                  <p style="font-size: 30px; font-weight: bold">
+                  <p
+                    style="
+                      font-size: 30px;
+                      font-weight: bold;
+                      font-family: 'Crimson Text', serif;
+                    "
+                  >
                     Welcome to GoDaddy
                   </p>
                   <p
@@ -235,9 +224,19 @@
                     an idea, we can help you bring it to life. Get started with
                     30% off your first purchase
                   </p>
-                  <p href="#" class="button-fill">
+                  <a
+                    href="#"
+                    style="
+                      background: #00a4a6;
+                      color: #fff;
+                      text-decoration: none;
+                      padding: 20px 30px;
+                      font-size: 12px;
+                      cursor: pointer;
+                    "
+                  >
                     Start Shopping and Save 30% &#8594;
-                  </p>
+                  </a>
                   <p style="padding-top: 20px">
                     Use promo code
                     <span style="font-weight: bold; letter-spacing: -1px" ;
@@ -272,7 +271,7 @@
                     start with either a domain or a website
                   </p>
                   <tr>
-                    <td class="two-col" style="padding: 25px">
+                    <td class="two-col">
                       <table class="col">
                         <tr>
                           <td class="padding">
@@ -378,7 +377,7 @@
                 <td class="two-columns last">
                   <table class="firstCol">
                     <tr>
-                      <td style="padding: 25px 0">
+                      <td style="padding: 25px 10px">
                         <table class="content">
                           <tr>
                             <td style="text-align: left">
@@ -390,9 +389,9 @@
                                 to hep you keep your business open, even if your
                                 doors are closed.
                               </p>
-                              <p href="#" class="callout--btn">
+                              <a href="#" class="callout--btn">
                                 Get Free Resources &#8594;
-                              </p>
+                              </a>
                             </td>
                           </tr>
                         </table>
@@ -437,12 +436,10 @@
                 <td>
                   <table class="contactImg">
                     <tr>
-                      <td>
+                      <td align="center">
                         <table
-                          width="44"
-                          height="44"
                           cellspacing="0"
-                          style="border-radius: 50%"
+                          style="margin: 0 auto; text-align: center"
                         >
                           <tr>
                             <td>
